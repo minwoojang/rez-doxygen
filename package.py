@@ -37,11 +37,6 @@ uuid = "doxygen-{version}".format(version=str(version))
 
 def commands():
     env.PATH.prepend("{root}/bin")
-    # env.LD_LIBRARY_PATH.prepend("{root}/lib")
-    # env.PYTHONPATH.prepend("{root}/lib/python" + str(env.REZ_PYTHON_MAJOR_VERSION) + "." + str(env.REZ_PYTHON_MINOR_VERSION) + "/site-packages")
-    # env.CMAKE_MODULE_PATH.prepend("{root}/lib/cmake/Alembic")
 
-    # # Helper environment variables.
-    # env.ALEMBIC_BINARY_PATH.set("{root}/bin")
-    # env.ALEMBIC_INCLUDE_PATH.set("{root}/include")
-    # env.ALEMBIC_LIBRARY_PATH.set("{root}/lib")
+    # Helper environment variables.
+    env.DOXYGEN_BINARY_PATH.set("{root}/bin")

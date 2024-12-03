@@ -42,7 +42,8 @@ cmake \
     ${BUILD_PATH}/.. \
     -DCMAKE_INSTALL_PREFIX=${INSTALL_PATH} \
     -DCMAKE_C_FLAGS="-fPIC" \
-    -DCMAKE_CXX_FLAGS="-fPIC"
+    -DCMAKE_CXX_FLAGS="-fPIC" \
+    # -DFLEX_EXECUTABLE=/cocoa/inhouse/tool/rez-packages/flex/2.6.4/platform-linux/arch-x86_64/bin/flex
 
 echo -e "\n"
 echo -e "[CONFIGURE] Finished configuring Doxygen-${DOXYGEN_VERSION}!"

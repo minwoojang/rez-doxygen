@@ -1,6 +1,6 @@
 name = "doxygen"
 
-version = "1.8.18"
+version = "1.12.0"
 
 authors = [
     "Dimitri van Heesch"
@@ -16,13 +16,13 @@ description = \
 requires = [
     "bison-3+",
     "cmake-3+",
-    "flex-2+",
-    "gcc-6+",
-    "python-2.7+<3"
+    # "flex",
+    "gcc-11",
+    "python"
 ]
 
 variants = [
-    ["platform-linux"]
+    ["platform-linux","arch-x86_64"]
 ]
 
 tools = [

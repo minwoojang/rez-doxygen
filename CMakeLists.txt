@@ -5,6 +5,8 @@ include(RezRepository)
 include(ExternalProject)
 
 # We split the Doxygen version string in multiple ones.
+add_compile_options(-Wno-deprecated-copy)
+
 string(REPLACE "." ";" DOXYGEN_VERSION_LIST ${REZ_BUILD_PROJECT_VERSION})
 list(GET DOXYGEN_VERSION_LIST 0 DOXYGEN_VERSION_MAJOR)
 list(GET DOXYGEN_VERSION_LIST 1 DOXYGEN_VERSION_MINOR)
